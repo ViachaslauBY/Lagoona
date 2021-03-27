@@ -323,7 +323,7 @@ body {
     line-height: 175%;
     color: #CC9933;
     text-decoration: none;
-    background-image: url(/img/arrow2.svg);
+    background-image: url(../img/arrow2.svg);
     background-repeat: no-repeat;
     background-size: auto 16px;
     background-position: right center;
@@ -515,7 +515,7 @@ body {
     line-height: 200%;
     color: #FFFFFF;
     text-decoration: none;
-    background-image: url(/img/arrow3.svg);
+    background-image: url(../img/arrow3.svg);
     background-repeat: no-repeat;
     background-size: auto 16px;
     background-position: center right;
@@ -541,13 +541,14 @@ body {
     border-radius: 15px;
 }
 
-.search-city {
+.search-city, .search-country,
+.search-date, .number-nights,
+.number-tourists {
     display: flex;
     flex-direction: column;
-    margin-right: 16px;
 }
 
-.form__label-city {
+.form__label {
     margin-bottom: 13px;
     font-family: 'MullerRegular';
     font-size: 13px;
@@ -556,9 +557,7 @@ body {
     color: #000000;
 }
 
-.form__select-city {
-    margin-left: -3px;
-    padding-right: 22px;
+.form__select, .form__input {
     border: none;
     font-family: 'MullerRegular';
     font-size: 16px;
@@ -566,63 +565,66 @@ body {
     letter-spacing: -0.01px;
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.search-city {
+    margin-right: 16px;
+}
+
+.city {
+    margin-left: -3px;
+    padding-right: 22px;
 }
 
 .search-country {
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
     margin-right: 16px;
 }
 
-.form__label-country {
-    margin-bottom: 13px;
-    font-family: 'MullerRegular';
-    font-size: 13px;
-    line-height: 14px;
-    letter-spacing: -0.4px;
-    color: #000000;
-}
-
-.form__select-country {
+.country {
     margin-left: -3px;
     padding-right: 72px;
-    border: none;
-    font-family: 'MullerRegular';
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: -0.01px;
-    color: #000000;
-    background-color: #FFFFFF;
 }
 
 .search-date {
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
-    margin-right: 16px;
 }
 
-.form__label-date {
-    margin-bottom: 11px;
-    font-family: 'MullerRegular';
-    font-size: 13px;
-    line-height: 14px;
-    letter-spacing: -0.4px;
-    color: #000000;
+.date {
+    padding-right: 5px;
+    width: 139px;
 }
 
-.form__input-date {
-    padding-right: 10px;
-    border: none;
-    font-family: 'MullerRegular';
+.number-nights, .number-tourists {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nights, .tourists {
+    padding-bottom: 2px;
+    width: 122px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.wrapper__button {
+    margin-left: 30px;
+}
+
+.form__button {
+    padding: 13px 30px;
+    display: block;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: -0.01px;
-    color: #000000;
+    color: #CC9933;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
-
 /*************************** Contacts ****************************/
 .contacts {
     margin-bottom: 18px;
