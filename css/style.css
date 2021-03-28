@@ -59,12 +59,6 @@ body {
     color: #333333;
 }
 
-.separator {
-    width: 1px;
-    height: 50px;
-    background-color: #E1E1E1;
-}
-
 .more__link {
     padding-right: 16px;
     font-size: 16px;
@@ -132,8 +126,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 56px;
+    padding: 17px 56px 17px 0;
     width: 100%;
-    max-width: 642px;
+    max-width: 700px;
+    border-right: 1px solid #E1E1E1;
     list-style: none;
 }
 
@@ -147,7 +143,6 @@ body {
 .nav__info {
     display: flex;
     justify-content: space-between;
-    margin-left: 57px;
     width: 100%;
     max-width: 324px;
 }
@@ -546,6 +541,8 @@ body {
 .number-tourists {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+    border-right: 1px solid #E1E1E1;
 }
 
 .form__label {
@@ -568,7 +565,7 @@ body {
 }
 
 .search-city {
-    margin-right: 16px;
+    padding-right: 16px;
 }
 
 .city {
@@ -577,8 +574,7 @@ body {
 }
 
 .search-country {
-    margin-left: 20px;
-    margin-right: 16px;
+    padding-right: 16px;
 }
 
 .country {
@@ -587,17 +583,16 @@ body {
 }
 
 .search-date {
-    margin-left: 20px;
-}
-
-.date {
     padding-right: 5px;
-    width: 139px;
+    width: 143px;
 }
 
-.number-nights, .number-tourists {
-    margin-left: 20px;
-    margin-right: 20px;
+.number-nights {
+    padding-right: 20px;
+}
+
+.number-tourists {
+    padding-right: 30px;
 }
 
 .nights, .tourists {
@@ -608,10 +603,6 @@ body {
 
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
-}
-
-.wrapper__button {
-    margin-left: 30px;
 }
 
 .form__button {
